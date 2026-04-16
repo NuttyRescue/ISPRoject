@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Theme Website</title>
+
+  <style>
+    :root {
+      --primary: #4f46e5;
+      --secondary: #1f2937;
+      --accent: #22c55e;
+      --background: #f9fafb;
+      --text: #111827;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--background);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    nav {
+      background: var(--secondary);
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1rem;
+    }
+
+    header {
+      background: var(--primary);
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      padding: 1.5rem;
+      margin: 1rem 0;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.7rem 1.2rem;
+      background: var(--accent);
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: var(--secondary);
+      color: white;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div><strong>MySite</strong></div>
+    <div>
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header>
+    <h1>Case Watkins</h1>
+    <a href="#contact" class="btn">Contact Me</a>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About</h2>
+    <div class="card">
+      <p>I am an undergraduate at BYU studying Mathematics with a minor in Business.</p>
+    </div>
+  </section>
+
+  <!-- RESUME SECTION: Replace this with your actual resume content -->
+  <section id="resume">
+    <h2>Resume</h2>
+    <div class="card">
+        <ul>
+            <li>-Graduated RMHS 2024</li>
+            <li>-6 months at Cafe Rio</li>
+            <li>-4 Months at Grayhawk Awards and Engraving</li>
+            <li>-Sophomore/Junior in college</li>
+        </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+      <p>Email: casesw@byu.edu</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Case Watkins</p>
+  </footer>
+
+</body>
+</html>
