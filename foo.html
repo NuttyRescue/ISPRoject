@@ -71,6 +71,8 @@
       color: white;
       border-radius: 5px;
       text-decoration: none;
+      cursor: pointer;
+      border: none;
     }
 
     footer {
@@ -92,6 +94,7 @@
       <a href="#about">About</a>
       <a href="#resume">Resume</a>
       <a href="#contact">Contact</a>
+      <a href="#jokes">Jokes</a>
     </div>
   </nav>
 
@@ -109,7 +112,7 @@
     </div>
   </section>
 
-  <!-- RESUME SECTION: Replace this with your actual resume content -->
+  <!-- RESUME SECTION -->
   <section id="resume">
     <h2>Resume</h2>
     <div class="card">
@@ -130,10 +133,34 @@
     </div>
   </section>
 
+  <!-- Joke Generator Section -->
+  <section id="jokes">
+    <h2>Joke Generator</h2>
+    <div class="card">
+      <p id="joke">Click the button to get a joke!</p>
+      <button class="btn" onclick="generateJoke()">Tell me a joke</button>
+    </div>
+  </section>
+
   <!-- Footer -->
   <footer>
     <p>© 2026 Case Watkins</p>
   </footer>
+
+  <script>
+    const jokes = [
+      "Why don't programmers like nature? Too many bugs.",
+      "Why did the math book look sad? It had too many problems.",
+      "Why do Java developers wear glasses? Because they don't see sharp.",
+      "Why did the student eat his homework? Because the teacher said it was a piece of cake.",
+      "Why was the computer cold? It left its Windows open."
+    ];
+
+    function generateJoke() {
+      const randomIndex = Math.floor(Math.random() * jokes.length);
+      document.getElementById("joke").textContent = jokes[randomIndex];
+    }
+  </script>
 
 </body>
 </html>
